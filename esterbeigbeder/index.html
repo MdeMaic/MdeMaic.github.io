@@ -16,6 +16,7 @@
     <section id="main">
         <nav>
             <a href="#main" class="logo">Ester Beigbeder</a>
+            <div class="toggle"></div>
             <ul class="menu">
                 <li><a href="#main">Home</a></li>
                 <li><a href="#about">Sobre mi</a></li>
@@ -138,5 +139,16 @@
     </form>
 </section>
 
+<script type="text/javascript" src="Jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+
+    </script>
 </body>
 </html>
