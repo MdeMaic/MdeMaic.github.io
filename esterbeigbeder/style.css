@@ -58,12 +58,17 @@ nav{
 }
 
 .lang{
+    display: flex;
+    justify-content: space-between;
+}
+.lang a{
     color: #201F1F;
+    margin: 6px 12px;
     font-family: 'Poppins', sans-serif;
     border-bottom: 2px solid transparent;
 }
 
-.lang:hover{
+.lang a:hover{
     border-bottom: 2px solid white;
     color: #FFF5F3;
     transition: all ease 0.3s;
@@ -79,6 +84,22 @@ nav{
 }
 
 .logo:hover{
+    border-bottom: 2px solid white;
+    color: #FFF5F3;
+    transition: all ease 0.3s;
+}
+
+.logo-mini{
+    display: none;
+    color: #201F1F;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.logo-mini:hover{
     border-bottom: 2px solid white;
     color: #FFF5F3;
     transition: all ease 0.3s;
@@ -510,10 +531,20 @@ li a {
 }
 
 @media(max-width:900px){
+    
+    
     .toggle{
-        display: block;   
+        display: block;
+        padding-left: 20px;   
     }
+    
 
+    .lang a{
+        color: #201F1F;
+        margin: 6px 8px;
+        font-family: 'Poppins', sans-serif;
+        border-bottom: 2px solid transparent;
+    }
     .toggle:before{
         content: '\f0c9';
         font-family: fontAwesome;
@@ -629,6 +660,14 @@ li a {
 
 @media(max-width:600px){
     
+    .logo{
+        display: none;
+    }
+
+    .logo-mini{
+        display: block;
+    }
+
     .p-b-container{
         grid-template-columns: 1fr;
     }
