@@ -666,7 +666,9 @@ li a {
     .logo{
         display: none;
     }
-
+    .social{
+        display: none;
+    }
     .logo-mini{
         display: block;
     }
