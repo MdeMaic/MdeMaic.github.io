@@ -538,6 +538,9 @@ li a {
         padding-left: 20px;   
     }
     
+    .social{
+        display: none;
+    }
 
     .lang a{
         color: #201F1F;
