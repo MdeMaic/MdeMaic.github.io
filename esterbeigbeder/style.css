@@ -23,6 +23,10 @@ html{
     background-position: center;
 }
 
+.parallax{
+    transition: transform 2s cubic-bezier(0,1,.5,1);
+}
+
 ul{
     list-style: none;
 }
@@ -141,6 +145,9 @@ li a {
 .name{
     color: #CD9B6F;
     font-size: 18px;
+}
+.details{
+    margin-bottom: 30px;
 }
 
 .name h1{
