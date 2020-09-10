@@ -4,10 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>maic</title>
+    <title>maic | digital stuff</title>
+    
+    <!--EXTERNAL LINKS-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f11f8947c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Hello World</h1>
-    <a href="esterbeigbeder/index.html">ESTER</a>
+
+    <section id="main">
+        <nav>
+            <a href="#main" class="logo">./maic</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li><a href="#main">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">gallery</a></li>
+                <li><a href="#contact-form">contact</a></li>
+            </ul>
+            
+            <div class="lang">
+                <a href="https://www.linkedin.com/in/miguel-ceinos/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MdeMaic" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:miguel.ceinos@gmail.com?subject=Contacto%20maic" target="_blank"><i class="fa fa-envelope"></i></a>
+            </div>
+        </nav>
+        <div class="n-cont">
+            <div class="name">
+                <p class="hi">Hi!</p>
+                <h1>Create, please.</h1>
+                <!-- <p class="details">
+                    I love creating digital things.
+                </p>
+            <a href="download/CV_Ester.pdf" download="CV_EsterBeigbeder.pdf" class="cv-btn">Descarga mi CV</a> --> 
+
+            </div>
+            <div class="n-pic">
+                <img src="img/maic.jpg" alt="main fondo">
+            </div>
+            <div class="n-menu">
+            <ul>
+                <li><a href="#main">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">gallery</a></li>
+                <li><a href="#contact-form">contact</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/miguel-ceinos/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MdeMaic" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:esterbeigbeder@gmail.com?subject=Contacto%20Ester%20Beigbeder" target="_blank"><i class="fa fa-envelope"></i></a>
+        </div>
+</section>
+
+    
+    
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="js/Jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+
+    </script>
+
+<script type="text/javascript" src="js/move.js"></script>
 </body>
 </html>
