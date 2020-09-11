@@ -1,4 +1,71 @@
-@charset "utf-8";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>maic | digital stuff</title>
+    
+    <!--EXTERNAL LINKS-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f11f8947c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <section id="main">
+        <nav>
+            <a href="#main" class="logo">./maic</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li><a href="#main">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">gallery</a></li>
+                <li><a href="#contact-form">contact</a></li>
+            </ul>
+            
+            <div class="lang">
+                <a href="https://www.linkedin.com/in/miguel-ceinos/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MdeMaic" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:miguel.ceinos@gmail.com?subject=Contacto%20maic" target="_blank"><i class="fa fa-envelope"></i></a>
+            </div>
+        </nav>
+        <div class="n-cont">
+            <div class="name">
+                <p class="hi">Hi!</p>
+                <h1>Create, please.</h1>
+                <!-- <p class="details">
+                    I love creating digital things.
+                </p>
+            <a href="download/CV_Ester.pdf" download="CV_EsterBeigbeder.pdf" class="cv-btn">Descarga mi CV</a> --> 
+
+            </div>
+            <div class="n-pic">
+                <img src="img/maic.jpg" alt="main fondo">
+            </div>
+            <div class="n-menu">
+            <ul>
+                <li><a href="#main">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">gallery</a></li>
+                <li><a href="#contact-form">contact</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/miguel-ceinos/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MdeMaic" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:esterbeigbeder@gmail.com?subject=Contacto%20Ester%20Beigbeder" target="_blank"><i class="fa fa-envelope"></i></a>
+        </div>
+</section>
+
+    
+    <style>
+    @charset "utf-8";
 
 :root {
     --main-color: #AFCD9D;
@@ -17,7 +84,6 @@ body{
 html{
     scroll-behavior: smooth;
 }
-
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -60,7 +126,7 @@ nav{
 
 .logo:hover{
     border-bottom: 2px solid var(--text-color);
-    transition: all ease 0.4s;
+    transition: all ease 0.3s;
 }
 
 nav ul{
@@ -74,7 +140,6 @@ nav ul a{
     font-family: 'Padauk', sans-serif;
     font-size: 1.1rem;
 }
-
 
 .menu{
     display: flex;
@@ -93,7 +158,7 @@ nav ul a{
 .menu li a:hover, 
 .menu li a.active{
     border-bottom: 2px solid var(--text-color);
-    transition: all ease 0.4s;
+    transition: all ease 0.3s;
 }
 
 .toggle{
@@ -104,16 +169,6 @@ nav ul a{
     width:120px;
     display: flex;
     justify-content: space-around;
-    
-}
-
-.lang a{
-    border-bottom: 2px solid transparent;
-}
-
-.lang a:hover{
-    border-bottom: 2px solid var(--text-color);
-    transition: all ease 0.4s;
 }
 
 .n-cont{
@@ -135,7 +190,7 @@ nav ul a{
     z-index: 1;
     width: 400px;
     height: 160px;
-    left: 20%;
+    left: 22%;
     top: 40%;
     margin: 0px;
     padding: 0px;
@@ -202,7 +257,7 @@ nav ul a{
     list-style: none;
     height: auto;
     justify-content: center;
-    align-items: auto;
+    align-items: center;
     align-self: center;
     width: auto;
 }
@@ -211,7 +266,6 @@ nav ul a{
     padding: 30px 0;
     align-content: center;
     flex: content;
-
 }
 
 
@@ -221,11 +275,6 @@ nav ul a{
     font-family: 'Heebo', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
-    border-bottom: 2px solid transparent;
-}
-
-.n-menu ul a:hover{
-    border-bottom: 2px solid var(--text-color);
 }
 
 
@@ -237,3 +286,30 @@ nav ul a{
     display: flex;
     justify-content: space-around;
 }
+
+.lang{
+
+}
+    </style>
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="js/Jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+
+    </script>
+
+<script type="text/javascript" src="js/move.js"></script>
+</body>
+</html>
